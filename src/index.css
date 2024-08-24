@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overflow-x: hidden;
+}
+
+/* @keyframes curved-underline {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .curved-underline::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    border-radius: 50% 50% 50% 0;
+    animation: curved-underline 0.5s ease-in-out;
+  }
+   */
+
+   @font-face {
+    font-family: "MontserratMedium";
+    src: url('./assets/family/Montserrat/static/Montserrat-Medium.ttf');
+   }
+
+   @font-face {
+    font-family: "MontserratSemiBold";
+    src: url('./assets/family/Montserrat/static/Montserrat-SemiBold.ttf');
+   }
+
+   @font-face {
+    font-family: "MontserratItalic";
+    src: url('./assets/family/Montserrat/static/Montserrat-Italic.ttf');
+   }
+
+   .font-M-medium{
+    font-family: "MontserratMedium";
+   }
+
+   .font-M-semiBold{
+    font-family: "MontserratSemiBold";
+   }
+
+   .font-M-italic{
+    font-family: "MontserratItalic";}
+
+ 
+   
