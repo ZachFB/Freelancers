@@ -1,6 +1,7 @@
 import { Globe } from "lucide-react"
 import { OrbitingCircle } from "../features/OrbitingCircle"
 import { AvatarCircle } from "../features/AvatarCircle"
+import { Link } from "react-router-dom"
 
 
 export const Hero = () => {
@@ -12,12 +13,12 @@ export const Hero = () => {
         <p className="text-left text-md mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur doloremque 
           officia magnam. Naira doloribus, tempora voluptatibus voluptatum, aspernatur
         </p>
-        <button className="relative flex text-center text-lg mt-3 border-2 border-[#d98b50] w-80 py-3 overflow-hidden group
+        <Link to='/contact' className="relative flex text-center text-lg mt-3 border-2 border-[#d98b50] w-80 py-3 overflow-hidden group
         rounded-full">
           <Globe size={30} className="relative z-10 mr-3 ml-2 group-hover:text-[#071620]"/>
         <span className="relative z-10 font-M-semiBold text-[#e1f1f9] group-hover:text-[#071620]">Commence Maintenant !</span>
         <span className="absolute inset-0 bg-[#d98b50] transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
-        </button>
+        </Link>
         <AvatarCircle/>
       </section>
       <section>

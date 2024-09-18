@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { useIntersectionObserver } from "@/lib/IntersectionObserverContext";
 import { Users, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Nous = () => {
 
@@ -53,10 +54,10 @@ export const Nous = () => {
                     <p className="text-md font-M-medium mt-4">Nous croyons que chaque idée mérite d'être transformée
                         en une réalité numérique qui change la donne. Notre équipe d'experts passionnés
                         travaille main dans la main avec nos clients pour créer des solutions logicielles...</p>
-                    <button className="relative text-center text-lg mt-4 border-2 border-[#d98b50] w-40 py-3 rounded-full overflow-hidden group">
+                    <Link to="/a-propos" className="relative text-center text-lg mt-4 border-2 border-[#d98b50] w-40 py-3 rounded-full overflow-hidden group">
                         <span className="relative z-10 font-M-semiBold group-hover:text-[#071620]">En savoir plus</span>
                         <span className="absolute inset-0 bg-[#d98b50] transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
-                    </button>
+                    </Link>
                 </motion.div>
                 <motion.div
                  initial={{
@@ -76,10 +77,10 @@ export const Nous = () => {
                     <p className="text-md font-M-medium mt-12">Nous sommes une équipe de freelances unis par une passion commune
                         : donner vie aux idées les plus audacieuses. Forts de notre expérience et de notre créativité,
                         nous accompagnons nos clients à chaque étape de leur parcours digital.</p>
-                    <button className="relative text-center text-lg mt-4 border-2 border-[#d98b50] w-40 py-3 rounded-full overflow-hidden group">
+                    <Link to='/a-propos' className="relative text-center text-lg mt-4 border-2 border-[#d98b50] w-40 py-3 rounded-full overflow-hidden group">
                         <span className="relative z-10 font-M-semiBold group-hover:text-[#071620]">En savoir plus</span>
                         <span className="absolute inset-0 bg-[#d98b50] transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
-                    </button>
+                    </Link>
                 </motion.div>
             </motion.div>
         </div>

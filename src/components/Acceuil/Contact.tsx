@@ -2,6 +2,7 @@ import { PhoneCall } from "lucide-react"
 import { Reviews } from "../features/Reviews"
 import {motion} from "framer-motion"
 import { useIntersectionObserver } from "@/lib/IntersectionObserverContext";
+import { Link } from "react-router-dom";
 
 
 export const Contact = () => {
@@ -42,6 +43,7 @@ export const Contact = () => {
           Faites le premier pas vers le succès, contactez-nous aujourd'hui et
           voyons ensemble comment nous pouvons concrétiser vos idées.</motion.p>
           <div className="flex justify-center w-full">
+         <Link to ="/contact">   
         <motion.button 
          initial={{
           rotate: -5,
@@ -58,6 +60,7 @@ export const Contact = () => {
           <span className="relative z-10 font-M-semiBold group-hover:text-[#071620]">Nous contacter</span>
           <span className="absolute inset-0 bg-[#d98b50] transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
         </motion.button>
+        </Link>
         </div>
       </div>
     </div>
