@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import { Acceuil } from "./components/Acceuil";
+import { Apropos } from "./components/Apropos";
+import { Services } from "./components/Services";
+import { Contact } from "./components/Contact";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -97,7 +100,12 @@ function App() {
           )}
           {/* Menu de navigation desktop */}
           <section className="hidden md:flex space-x-6">
-            <Link to="/" className="">
+            <Link to="/" className="" 
+            //   onClick={(e) => {
+            //   e.preventDefault(); // Empêche la navigation par défaut de React Router
+            //   window.location.href = "/"; // Force le rechargement de la page
+            // }}
+            >
               Accueil
             </Link>
             <Link to="/a-propos" className="">
@@ -139,9 +147,9 @@ function App() {
       <main className="bg-[#071620] w-full overflow-x-hidden">
         <Routes>
           <Route path="/" element={<Acceuil />} />
-          <Route path="/a-propos" element={<div>A propos de nous</div>} />
-          <Route path="/services" element={<div>Services</div>} />
-          <Route path="/contact" element={<div>Contact</div>} />
+          <Route path="/a-propos" element={<Apropos />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
 

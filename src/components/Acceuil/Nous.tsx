@@ -18,9 +18,11 @@ export const Nous = () => {
                 {
                     initial: {
                         y: 700,
+                        opacity: 0
                     },
                     venu:{
                      y:0,
+                     opacity:1
                     }
                 }
              }

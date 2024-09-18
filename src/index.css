@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -26,31 +26,47 @@ body{
   }
    */
 
-   @font-face {
-    font-family: "MontserratMedium";
-    src: url('./assets/family/Montserrat/static/Montserrat-Medium.ttf');
-   }
+@font-face {
+  font-family: "MontserratMedium";
+  src: url('./assets/family/Montserrat/static/Montserrat-Medium.ttf');
+}
 
-   @font-face {
-    font-family: "MontserratSemiBold";
-    src: url('./assets/family/Montserrat/static/Montserrat-SemiBold.ttf');
-   }
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url('./assets/family/Montserrat/static/Montserrat-SemiBold.ttf');
+}
 
-   @font-face {
-    font-family: "MontserratItalic";
-    src: url('./assets/family/Montserrat/static/Montserrat-Italic.ttf');
-   }
+@font-face {
+  font-family: "MontserratItalic";
+  src: url('./assets/family/Montserrat/static/Montserrat-Italic.ttf');
+}
 
-   .font-M-medium{
-    font-family: "MontserratMedium";
-   }
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/family/Nunito/static/Nunito-Bold.ttf");
+}
 
-   .font-M-semiBold{
-    font-family: "MontserratSemiBold";
-   }
+.font-M-medium {
+  font-family: "MontserratMedium";
+}
 
-   .font-M-italic{
-    font-family: "MontserratItalic";}
+.font-M-semiBold {
+  font-family: "MontserratSemiBold";
+}
 
- 
-   
+.font-M-italic {
+  font-family: "MontserratItalic";
+}
+
+.font-N-regular {
+  font-family: "Noto Sans";
+}
+
+
+.gradient-color {
+  background: #D98B50;
+  background: linear-gradient(to right, #D98B50 0%, #E1F1F9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
