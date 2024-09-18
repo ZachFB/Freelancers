@@ -61,10 +61,10 @@ export function Content() {
 
  //Affichage
   return (
-    <div className="mt-[-200px] mb-32 h-full w-full flex flex-col justify-center items-center">
-    <div id="Contact" className="flex flex-col max-w-[80%] md:flex-row justify-center items-center gap-12 dark:bg-[#0a001a] bg-[#e1e1e1] relative w-full p-12 rounded-3xl ">
+    <div className="lg:mt-[-200px] md:mt-[-650px] mt-[-350px] mb-32 h-full w-full flex flex-col justify-center items-center">
+    <div id="Contact" className="flex flex-col max-w-[80%] lg:flex-row justify-center items-center gap-12 dark:bg-[#0a001a] bg-[#e1e1e1] relative w-full p-12 rounded-3xl ">
      <AnimList/>
-      <div className="flex flex-col justify-center md:mr-[80px]">
+      <div className="flex justify-center  lg:mr-[80px]">
         <form onSubmit={handleSubmit(onSubmit)}>
           <h1 className="text-3xl font-M-medium text-center mb-2 text-[#0a001a] dark:text-[#efe5ff]">Contact par mail</h1>
           <div className='grid grid-cols-12 md:w-[430px] place-content-center'>
