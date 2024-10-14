@@ -70,3 +70,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.word-spacing-custom {
+  word-spacing: 2rem; /* Ajuste l'espace entre les mots */
+}
